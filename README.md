@@ -136,4 +136,4 @@ MelaTheme Core Plugin README
 
 **📄 License**
 
-This project is licensed under the GNU [License](LICENSE).
+This project is licensed under the GNU [License](https://github.com/melasistema/melasistema-wordpress-theme/blob/master/wp-content/themes/melatheme/LICENSE).
