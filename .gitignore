@@ -1,0 +1,53 @@
+# Exclude absolutely everything
+/*
+
+# But keep this file so Git keeps working
+!/README.md
+!/.gitignore
+!**/.gitignore
+
+# Allow drilling into wp-content
+!/wp-content/
+
+# Exclude everything inside wp-content…
+/wp-content/*
+
+# ─── Themes ────────────────────────────────────────────────
+
+# Whitelist the themes folder itself
+!/wp-content/themes/
+
+# Then ignore everything under themes
+/wp-content/themes/*
+
+# Re‑include melatheme theme folder
+!/wp-content/themes/melatheme
+# Ignore its contents by default
+/wp-content/themes/melatheme/*
+# Unignore everything inside it
+!/wp-content/themes/melatheme/**
+
+# ─── Plugins ───────────────────────────────────────────────
+
+# Whitelist the plugins folder itself
+!/wp-content/plugins/
+
+# Then ignore everything under plugins
+/wp-content/plugins/*
+
+# Re‑include your plugin folder
+!/wp-content/plugins/melatheme-core
+# Ignore its contents by default
+/wp-content/plugins/melatheme-core/*
+# Unignore everything inside it
+!/wp-content/plugins/melatheme-core/**
+
+# ─── Global ignores ────────────────────────────────────────
+.DS_Store
+.well-known/
+.github/
+.idea/
+node_modules/
+vendor/
+GEMINI.md
+*.log
