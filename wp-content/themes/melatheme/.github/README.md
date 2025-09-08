@@ -75,6 +75,23 @@ Log in to your WordPress admin panel and activate the following:
 - The `melatheme-core` plugin.
 - The `MelaTheme` theme. (You do not need to activate the parent Understrap theme).
 
+**5. Configure BrowserSync:**
+
+The theme uses BrowserSync to automatically reload your browser when you make changes to files. For this to work, you must configure it to point to your local site's URL.
+
+-   Open the file: `src/build/browser-sync.config.js`
+-   Find the `proxy` setting.
+-   Change the default value to the URL of your local WordPress installation.
+
+For example:
+```javascript
+// For a MAMP Pro or LocalWP setup:
+"proxy": "http://melatheme.local/"
+
+// For a generic localhost setup with a port:
+"proxy": "http://localhost:8888/"
+```
+
 Your local environment is now set up.
 
 ---
