@@ -15392,4 +15392,46 @@ body.understrap-no-sidebar .wp-block-cover.alignwide {
   border: 1px solid #e9ecef;
 }
 
+/**
+ * Megamenu Styles (Static Grid Version)
+ */
+.navbar-nav > li.megamenu {
+  position: static;
+}
+
+.megamenu-container {
+  width: 100%;
+  left: 0;
+  right: 0;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+@media (min-width: 768px) {
+  .megamenu-container {
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    border: none;
+  }
+}
+.megamenu-container .row {
+  width: 100%;
+  margin: 0;
+}
+.megamenu-container .megamenu-column-title {
+  font-weight: bold;
+  color: #212529;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+}
+.megamenu-container .megamenu-column-links .nav-item {
+  padding: 0;
+}
+.megamenu-container .megamenu-column-links .nav-item .nav-link, .megamenu-container .megamenu-column-links .nav-item .dropdown-item {
+  font-weight: normal;
+  padding: 0.25rem 0;
+  background: none !important;
+}
+.megamenu-container .megamenu-column-links .nav-item .nav-link:hover, .megamenu-container .megamenu-column-links .nav-item .dropdown-item:hover {
+  color: #0d6efd;
+}
+
 /*# sourceMappingURL=child-theme.css.map */

@@ -9,6 +9,26 @@ This theme is designed to be lean and focused strictly on the **presentation lay
 -   **Theme for Presentation Only:** The theme's responsibility is limited to templates, styling (Sass), frontend JavaScript, and assets.
 -   **Plugins for Logic:** All functionality, such as creating Custom Post Types, custom taxonomies, API integrations, or form handling, must be implemented within plugins. The primary companion plugin for this theme is `melatheme-core`.
 
+---
+
+## Theme Features
+
+### Megamenu
+
+To enable the megamenu for a specific navigation item, follow these steps:
+
+1.  In the WordPress dashboard, navigate to **Appearance > Menus**.
+2.  At the top-right of the screen, click **Screen Options** and ensure the **CSS Classes** option is checked.
+3.  Expand the top-level menu item you wish to convert into a megamenu.
+4.  In the **CSS Classes** field, add the class `megamenu`.
+5.  Structure your menu items three levels deep:
+    *   **Level 1:** The main navigation link (with the `megamenu` class).
+    *   **Level 2:** Non-clickable column titles for the megamenu grid.
+    *   **Level 3:** The clickable links that will appear under each column title.
+6.  Save the menu. The theme will automatically convert it into a wide, grid-based megamenu where the column content is always visible.
+
+---
+
 ## Requirements
 
 Before you begin, ensure you have the following set up:

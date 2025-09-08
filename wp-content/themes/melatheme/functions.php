@@ -8,6 +8,14 @@
 // Exit if accessed directly.
 defined( 'ABSPATH' ) || exit;
 
+function melatheme_load_custom_walker() {
+    // Include the custom nav walker for megamenu support.
+    if ( file_exists( get_stylesheet_directory() . '/inc/mela-megamenu-walker.php' ) ) {
+        require_once get_stylesheet_directory() . '/inc/mela-megamenu-walker.php';
+    }
+}
+add_action( 'after_setup_theme', 'melatheme_load_custom_walker' );
+
 
 
 /**

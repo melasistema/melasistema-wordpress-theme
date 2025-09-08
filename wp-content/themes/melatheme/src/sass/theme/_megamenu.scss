@@ -1,0 +1,52 @@
+/**
+ * Megamenu Styles (Static Grid Version)
+ */
+
+// The parent `li` of a megamenu needs to be static to allow the dropdown to span the full width.
+.navbar-nav > li.megamenu {
+  position: static;
+}
+
+.megamenu-container {
+  width: 100%;
+  left: 0;
+  right: 0;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+
+  // On larger screens, give it a subtle shadow.
+  @media (min-width: 768px) {
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    border: none;
+  }
+
+  .row {
+    width: 100%;
+    margin: 0;
+  }
+
+  // Style for the column headers (Level 2 menu items).
+  .megamenu-column-title {
+    font-weight: bold;
+    color: #212529; // Bootstrap's default dark color
+    margin-bottom: 1rem;
+    font-size: 1rem;
+  }
+
+  // The list of links inside a column.
+  .megamenu-column-links {
+    .nav-item {
+      padding: 0;
+
+      .nav-link, .dropdown-item {
+        font-weight: normal;
+        padding: 0.25rem 0;
+        background: none !important;
+
+        &:hover {
+          color: #0d6efd; // Bootstrap primary color
+        }
+      }
+    }
+  }
+}
