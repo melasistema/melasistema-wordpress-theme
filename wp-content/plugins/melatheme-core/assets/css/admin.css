@@ -1,0 +1,4 @@
+/* Hide the fields by default for all items */
+.melatheme-megamenu-fields-wrapper { display: none; }
+/* ONLY show the fields on second-level items (depth-1) */
+.menu-item-depth-1 .melatheme-megamenu-fields-wrapper { display: block; }

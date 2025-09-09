@@ -14,6 +14,10 @@
 if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly.
 }
+
+// Define plugin version.
+
+
 /**
  * Load Plugin Constants
  */
@@ -22,13 +26,19 @@ require_once __DIR__ . '/constants.php';
 /**
  * Load CMB2
  */
-require_once MELATHEME_CORE_BASE_DIR . '/vendor/cmb2/init.php';
+if ( is_admin() ) {
+	require_once MELATHEME_CORE_BASE_DIR . '/vendor/cmb2/init.php';
+}
 
+/**
+ * Load the main plugin class.
+ */
+require_once MELATHEME_CORE_BASE_DIR . '/includes/core/class-melatheme-core-plugin.php';
 
-// Include the Mega Menu Content CPT registration.
-require_once MELATHEME_CORE_BASE_DIR . '/cpt-megamenu-content.php';
-
-// Include the Nav Menu Custom Fields.
-require_once MELATHEME_CORE_BASE_DIR . '/nav-menu-custom-fields.php';
-
-
+/**
+ * Instantiate the plugin.
+ */
+function melatheme_core_run() {
+	new MelaTheme_Core_Plugin();
+}
+add_action( 'plugins_loaded', 'melatheme_core_run' );

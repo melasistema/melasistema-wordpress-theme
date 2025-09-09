@@ -53,7 +53,6 @@ function melatheme_core_add_custom_fields_to_menu_items( $item_id, $item, $depth
     </div>
     <?php
 }
-add_action( 'wp_nav_menu_item_custom_fields', 'melatheme_core_add_custom_fields_to_menu_items', 10, 4 );
 
 /**
  * Step 2: Save the custom field value.
@@ -74,19 +73,3 @@ function melatheme_core_save_custom_menu_item_fields( $menu_id, $menu_item_db_id
         delete_post_meta( $menu_item_db_id, '_melatheme_hide_column_title' );
     }
 }
-add_action( 'wp_update_nav_menu_item', 'melatheme_core_save_custom_menu_item_fields', 10, 3 );
-
-/**
- * Step 3: Use CSS to control visibility.
- */
-function melatheme_core_add_megamenu_admin_styles() {
-    ?>
-    <style>
-        /* Hide the fields by default for all items */
-        .melatheme-megamenu-fields-wrapper { display: none; }
-        /* ONLY show the fields on second-level items (depth-1) */
-        .menu-item-depth-1 .melatheme-megamenu-fields-wrapper { display: block; }
-    </style>
-    <?php
-}
-add_action( 'admin_head-nav-menus.php', 'melatheme_core_add_megamenu_admin_styles' );
