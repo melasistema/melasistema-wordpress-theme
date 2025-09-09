@@ -16,6 +16,11 @@ function melatheme_load_custom_walker() {
 }
 add_action( 'after_setup_theme', 'melatheme_load_custom_walker' );
 
+/**
+ * Implement the Customizer functionality.
+ */
+require_once get_stylesheet_directory() . '/inc/customizer.php';
+
 
 
 /**

@@ -1,0 +1,41 @@
+// Custom styles for MelaTheme child theme
+
+// Navbar background
+.navbar {
+  background-color: var(--melatheme-navbar-background-color, #343a40);
+}
+
+// Navbar link colors
+.navbar-nav .nav-link {
+  color: var(--melatheme-navbar-link-color, #ffffff);
+  &:hover {
+    color: var(--melatheme-navbar-link-hover-color, #cccccc);
+  }
+}
+
+// Primary button styling
+.btn-primary {
+  background-color: var(--melatheme-primary-color, #007bff);
+  border-color: var(--melatheme-primary-color, #007bff);
+
+  &:hover {
+    // Darken the primary color on hover
+    // Using a direct CSS filter for simplicity with CSS variables
+    background-color: var(--melatheme-primary-color, #007bff);
+    border-color: var(--melatheme-primary-color, #007bff);
+    filter: brightness(85%); // Darken by 15%
+  }
+}
+
+// Secondary button styling
+.btn-secondary {
+  background-color: var(--melatheme-secondary-color, #6c757d);
+  border-color: var(--melatheme-secondary-color, #6c757d);
+
+  &:hover {
+    // Darken the secondary color on hover
+    background-color: var(--melatheme-secondary-color, #6c757d);
+    border-color: var(--melatheme-secondary-color, #6c757d);
+    filter: brightness(85%); // Darken by 15%
+  }
+}

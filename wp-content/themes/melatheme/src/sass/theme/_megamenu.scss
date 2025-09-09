@@ -13,6 +13,8 @@
   right: 0;
   padding-top: 1rem;
   padding-bottom: 1rem;
+  background-color: var(--melatheme-megamenu-background-color, #ffffff); // Use Customizer background color
+  color: var(--melatheme-megamenu-text-color, #333333); // Use Customizer text color
 
   // On larger screens, give it a subtle shadow.
   @media (min-width: 768px) {
@@ -28,7 +30,7 @@
   // Style for the column headers (Level 2 menu items).
   .megamenu-column-title {
     font-weight: bold;
-    color: #212529; // Bootstrap's default dark color
+    color: var(--melatheme-megamenu-text-color, #333333); // Use Customizer text color
     margin-bottom: 1rem;
     font-size: 1rem;
   }
@@ -42,9 +44,10 @@
         font-weight: normal;
         padding: 0.25rem 0;
         background: none !important;
+        color: var(--melatheme-megamenu-text-color, #333333); // Use Customizer text color
 
         &:hover {
-          color: #0d6efd; // Bootstrap primary color
+          color: var(--melatheme-extra-color, #28a745); // Use accent color for hover
         }
       }
     }

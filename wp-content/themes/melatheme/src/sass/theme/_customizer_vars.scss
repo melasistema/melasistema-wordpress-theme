@@ -1,0 +1,33 @@
+// src/sass/theme/_customizer_vars.scss
+// This file applies Customizer CSS variables to Bootstrap's compiled CSS variables.
+
+// Apply Customizer colors to Bootstrap's CSS variables
+:root {
+  --bs-primary: var(--melatheme-primary-color, #007bff);
+  --bs-secondary: var(--melatheme-secondary-color, #6c757d);
+  --bs-accent: var(--melatheme-extra-color, #28a745); // Assuming Bootstrap has a --bs-accent or similar
+  --bs-link-color: var(--melatheme-extra-color, #28a745); // Use accent for links
+}
+
+// Apply Customizer typography to Bootstrap's CSS variables
+:root {
+  --bs-body-font-family: var(--melatheme-base-font, Arial, sans-serif);
+  --bs-font-sans-serif: var(--melatheme-base-font, Arial, sans-serif); // Override Bootstrap's default sans-serif
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--melatheme-base-font, Arial, sans-serif); // Default to base font
+}
+
+h1 {
+  font-family: var(--melatheme-h1-font, Arial, sans-serif);
+}
+h2 {
+  font-family: var(--melatheme-h2-font, Arial, sans-serif);
+}
+h3 {
+  font-family: var(--melatheme-h3-font, Arial, sans-serif);
+}
+p {
+  font-family: var(--melatheme-p-font, Arial, sans-serif);
+}
