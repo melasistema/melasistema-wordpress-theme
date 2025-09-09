@@ -50,8 +50,7 @@ function melatheme_customize_register( $wp_customize ) {
 
 	// Extra Color (Accent)
 	$wp_customize->add_setting( 'melatheme_extra_color', array(
-		'default'           => '#28a745', // Bootstrap success green
-		'sanitize_callback' => 'sanitize_hex_color',
+		'default'           => '#c6622f', // Orange accent color
 		'transport'         => 'postMessage',
 	) );
 	$wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, 'melatheme_extra_color', array(
@@ -224,7 +223,7 @@ function melatheme_customizer_css() {
 		:root {
 			--melatheme-primary-color: <?php echo get_theme_mod( 'melatheme_primary_color', '#007bff' ); ?>;
 			--melatheme-secondary-color: <?php echo get_theme_mod( 'melatheme_secondary_color', '#6c757d' ); ?>;
-			--melatheme-extra-color: <?php echo get_theme_mod( 'melatheme_extra_color', '#28a745' ); ?>;
+			--melatheme-extra-color: <?php echo get_theme_mod( 'melatheme_extra_color', '#c6622f' ); ?>;
 			--melatheme-navbar-background-color: <?php echo get_theme_mod( 'melatheme_navbar_background_color', '#343a40' ); ?>;
 			--melatheme-navbar-link-color: <?php echo get_theme_mod( 'melatheme_navbar_link_color', '#ffffff' ); ?>;
 			--melatheme-navbar-link-hover-color: <?php echo get_theme_mod( 'melatheme_navbar_link_hover_color', '#cccccc' ); ?>;

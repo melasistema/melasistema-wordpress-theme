@@ -39,3 +39,9 @@
     filter: brightness(85%); // Darken by 15%
   }
 }
+
+a {
+  &:hover {
+    color: color-mix(in srgb, var(--bs-link-color) 85%, black); // Darken by 15%
+  }
+}

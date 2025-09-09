@@ -11633,8 +11633,8 @@ textarea.form-control-lg {
 :root {
   --bs-primary: var(--melatheme-primary-color, #007bff);
   --bs-secondary: var(--melatheme-secondary-color, #6c757d);
-  --bs-accent: var(--melatheme-extra-color, #28a745);
-  --bs-link-color: var(--melatheme-extra-color, #28a745);
+  --bs-accent: var(--melatheme-extra-color, #b66700);
+  --bs-link-color: var(--melatheme-extra-color, #ff4141);
 }
 
 :root {
@@ -15027,6 +15027,10 @@ figure.woocommerce-product-gallery__wrapper {
   filter: brightness(85%);
 }
 
+a:hover {
+  color: color-mix(in srgb, var(--bs-link-color) 85%, black);
+}
+
 .has-blue-color,
 .has-blue-color:visited {
   color: #0d6efd;
@@ -15494,10 +15498,10 @@ body.understrap-no-sidebar .wp-block-cover.alignwide {
   font-weight: normal;
   padding: 0.25rem 0;
   background: none !important;
-  color: var(--melatheme-megamenu-text-color, #333333);
+  /*color: var(--melatheme-megamenu-text-color, #333333);*/
 }
 .megamenu-container .megamenu-column-links .nav-item .nav-link:hover, .megamenu-container .megamenu-column-links .nav-item .dropdown-item:hover {
-  color: var(--melatheme-extra-color, #28a745);
+  /*color: var(--melatheme-extra-color, #28a745);*/
 }
 
 /*# sourceMappingURL=child-theme.css.map */

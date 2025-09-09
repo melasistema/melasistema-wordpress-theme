@@ -430,7 +430,7 @@ progress {
   --bs-gray-700: #495057;
   --bs-gray-800: #343a40;
   --bs-gray-900: #212529;
-  --bs-primary: #007bff;
+  --bs-primary: #0d6efd;
   --bs-secondary: #6c757d;
   --bs-success: #198754;
   --bs-info: #0dcaf0;
@@ -438,7 +438,7 @@ progress {
   --bs-danger: #dc3545;
   --bs-light: #f8f9fa;
   --bs-dark: #212529;
-  --bs-primary-rgb: 0, 123, 255;
+  --bs-primary-rgb: 13, 110, 253;
   --bs-secondary-rgb: 108, 117, 125;
   --bs-success-rgb: 25, 135, 84;
   --bs-info-rgb: 13, 202, 240;
@@ -469,8 +469,8 @@ progress {
   --bs-border-radius-xl: 1rem;
   --bs-border-radius-2xl: 2rem;
   --bs-border-radius-pill: 50rem;
-  --bs-link-color: #007bff;
-  --bs-link-hover-color: #0062cc;
+  --bs-link-color: #0d6efd;
+  --bs-link-hover-color: #0a58ca;
   --bs-code-color: #d63384;
   --bs-highlight-bg: #fff3cd;
 }
@@ -553,13 +553,13 @@ progress {
 
 .table-primary {
   --bs-table-color: #000;
-  --bs-table-bg: #cce5ff;
-  --bs-table-border-color: #b8cee6;
-  --bs-table-striped-bg: #c2daf2;
+  --bs-table-bg: #cfe2ff;
+  --bs-table-border-color: #bacbe6;
+  --bs-table-striped-bg: #c5d7f2;
   --bs-table-striped-color: #000;
-  --bs-table-active-bg: #b8cee6;
+  --bs-table-active-bg: #bacbe6;
   --bs-table-active-color: #000;
-  --bs-table-hover-bg: #bdd4ec;
+  --bs-table-hover-bg: #bfd1ec;
   --bs-table-hover-color: #000;
   color: var(--bs-table-color);
   border-color: var(--bs-table-border-color);
@@ -870,7 +870,7 @@ progress {
   --bs-gray-700: #495057;
   --bs-gray-800: #343a40;
   --bs-gray-900: #212529;
-  --bs-primary: #007bff;
+  --bs-primary: #0d6efd;
   --bs-secondary: #6c757d;
   --bs-success: #198754;
   --bs-info: #0dcaf0;
@@ -878,7 +878,7 @@ progress {
   --bs-danger: #dc3545;
   --bs-light: #f8f9fa;
   --bs-dark: #212529;
-  --bs-primary-rgb: 0, 123, 255;
+  --bs-primary-rgb: 13, 110, 253;
   --bs-secondary-rgb: 108, 117, 125;
   --bs-success-rgb: 25, 135, 84;
   --bs-info-rgb: 13, 202, 240;
@@ -909,8 +909,8 @@ progress {
   --bs-border-radius-xl: 1rem;
   --bs-border-radius-2xl: 2rem;
   --bs-border-radius-pill: 50rem;
-  --bs-link-color: #007bff;
-  --bs-link-hover-color: #0062cc;
+  --bs-link-color: #0d6efd;
+  --bs-link-hover-color: #0a58ca;
   --bs-code-color: #d63384;
   --bs-highlight-bg: #fff3cd;
 }
@@ -922,8 +922,8 @@ progress {
 }
 
 .text-bg-primary {
-  color: #000 !important;
-  background-color: RGBA(0, 123, 255, var(--bs-bg-opacity, 1)) !important;
+  color: #fff !important;
+  background-color: RGBA(13, 110, 253, var(--bs-bg-opacity, 1)) !important;
 }
 
 .text-bg-secondary {
@@ -962,10 +962,10 @@ progress {
 }
 
 .link-primary {
-  color: #007bff !important;
+  color: #0d6efd !important;
 }
 .link-primary:hover, .link-primary:focus {
-  color: #3395ff !important;
+  color: #0a58ca !important;
 }
 
 .link-secondary {
@@ -5289,16 +5289,16 @@ progress {
 
 .has-primary-color,
 .has-primary-color:visited {
-  color: #007bff;
+  color: #0d6efd;
 }
 
 .has-primary-background-color {
-  background-color: #007bff;
-  border-color: #007bff;
+  background-color: #0d6efd;
+  border-color: #0d6efd;
 }
 
 .wp-block-button:hover .wp-block-button__link.has-white-background-color.has-primary-color {
-  color: #007bff;
+  color: #0d6efd;
 }
 
 .has-secondary-color,
@@ -5486,6 +5486,38 @@ body.understrap-no-sidebar .wp-block-cover.alignwide {
 }
 .wp-block-buttons .wp-block-button:not(.is-style-outline) .wp-block-button__link {
   border: 1px solid transparent;
+}
+
+:root {
+  --bs-primary: var(--melatheme-primary-color, #007bff);
+  --bs-secondary: var(--melatheme-secondary-color, #6c757d);
+  --bs-accent: var(--melatheme-extra-color, #b66700);
+  --bs-link-color: var(--melatheme-extra-color, #ff4141);
+}
+
+:root {
+  --bs-body-font-family: var(--melatheme-base-font, Arial, sans-serif);
+  --bs-font-sans-serif: var(--melatheme-base-font, Arial, sans-serif);
+}
+
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
+  font-family: var(--melatheme-base-font, Arial, sans-serif);
+}
+
+h1, .h1 {
+  font-family: var(--melatheme-h1-font, Arial, sans-serif);
+}
+
+h2, .h2 {
+  font-family: var(--melatheme-h2-font, Arial, sans-serif);
+}
+
+h3, .h3 {
+  font-family: var(--melatheme-h3-font, Arial, sans-serif);
+}
+
+p {
+  font-family: var(--melatheme-p-font, Arial, sans-serif);
 }
 
 .components-circular-option-picker__option {

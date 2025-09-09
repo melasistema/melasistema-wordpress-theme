@@ -5,8 +5,8 @@
 :root {
   --bs-primary: var(--melatheme-primary-color, #007bff);
   --bs-secondary: var(--melatheme-secondary-color, #6c757d);
-  --bs-accent: var(--melatheme-extra-color, #28a745); // Assuming Bootstrap has a --bs-accent or similar
-  --bs-link-color: var(--melatheme-extra-color, #28a745); // Use accent for links
+  --bs-accent: var(--melatheme-extra-color, #b66700); // Assuming Bootstrap has a --bs-accent or similar
+  --bs-link-color: var(--melatheme-extra-color, #ff4141); // Use accent for links
 }
 
 // Apply Customizer typography to Bootstrap's CSS variables

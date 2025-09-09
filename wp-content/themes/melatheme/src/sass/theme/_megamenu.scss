@@ -44,10 +44,10 @@
         font-weight: normal;
         padding: 0.25rem 0;
         background: none !important;
-        color: var(--melatheme-megamenu-text-color, #333333); // Use Customizer text color
+        /*color: var(--melatheme-megamenu-text-color, #333333);*/ // Use Customizer text color
 
         &:hover {
-          color: var(--melatheme-extra-color, #28a745); // Use accent color for hover
+          /*color: var(--melatheme-extra-color, #28a745);*/ // Use accent color for hover
         }
       }
     }
