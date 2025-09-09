@@ -40,6 +40,8 @@ class MelaTheme_Core_Plugin {
 	private function hooks() {
 		// Enqueue admin styles.
 		add_action( 'admin_enqueue_scripts', array( $this, 'enqueue_admin_styles' ) );
+		// Enqueue admin scripts.
+		add_action( 'admin_enqueue_scripts', array( $this, 'enqueue_admin_scripts' ) );
 	}
 
 	/**
@@ -50,6 +52,19 @@ class MelaTheme_Core_Plugin {
 			MELATHEME_CORE_BASE_URL . 'assets/css/admin.css',
 			array(),
 			MELATHEME_CORE_VERSION
+		);
+	}
+
+	/**
+	 * Enqueue admin scripts.
+	 */
+	public function enqueue_admin_scripts() {
+		wp_enqueue_script(
+			'melatheme-core-admin-megamenu',
+			MELATHEME_CORE_BASE_URL . 'assets/js/admin-megamenu.js',
+			array( 'jquery' ), // Dependency on jQuery
+			MELATHEME_CORE_VERSION,
+			true // Enqueue in the footer
 		);
 	}
 }
